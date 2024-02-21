@@ -1,0 +1,37 @@
+.container-home{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    background-color: #ffffffe6;
+    height: 600px;
+    width: 600px;
+    position: fixed;
+    top: 7%;
+    left: 26.5%;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+.container-text{
+    display: grid;
+    align-self: center;
+    margin-bottom: 10%;
+
+}
+
+.container-buttons{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    
+}
+.boton{
+    background-color: #344d67;
+    color: #6eccaf;
+    margin-right: 10px;
+    margin-top: 30px;
+    padding: 15px;
+    width: 113px;
+}
