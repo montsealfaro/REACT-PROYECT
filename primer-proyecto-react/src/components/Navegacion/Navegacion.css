@@ -1,3 +1,4 @@
-div{
-    background-color: blue;
+.active{
+    color: #344d67;
+    background-color: #6eccaf;
 }
