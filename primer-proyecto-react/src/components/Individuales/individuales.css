@@ -1,6 +1,6 @@
 .individuales{
     background-color:  #223142;
-    width:320px;
+    width:fit-content;
     display: flex;
     position: relative;
 }
@@ -12,4 +12,3 @@
 .cajaDescripción{
     position: absolute;
 }
-

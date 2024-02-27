@@ -16,27 +16,31 @@ export default function Tarjetas(){
 
         let info= await fetch("https://rickandmortyapi.com/api/character")
                .then((resp)=>{return resp.json()})
-               .then((data)=>{ return data.results}) 
+               .then((data)=>{ return data.results})
                .catch((error)=>{console.log(error)})
        
-           
           console.log(info)
         
 
         setListaPersonajes(info)
+        
         setPersonajesCompleto(info)
     };
 
 
     
-
     const filterCharacter=(target)=>{
+        
         if(target.checked === true){
+            
             setFiltrosAplicados([...filtrosAplicados,target.value])
+           
         }else{
+            
             setListaPersonajes(personajesCompleto)
             let filtrosNuevos=filtrosAplicados.filter((filtro)=> filtro !== target.value);
             setFiltrosAplicados(filtrosNuevos)
+            
         }
     }
 
@@ -59,30 +63,31 @@ export default function Tarjetas(){
         })
         
     },[filtrosAplicados])
-  
+    
 
     useEffect(()=>{
         traerPersonajes()
     },[]);
     
     return(
-        <section className='structure'>
-            
-            <div className="filtros"> 
-            <Filtros  filterCharacter={filterCharacter}/> 
-            </div>
-        
+        <section className="">
+
+
+            <Filtros filterCharacter={filterCharacter}/>
             <div className="tarjetas">
-                {
-                listaPersonajes.map((personaje)=>{
-                    
-                    return <Individuales key={personaje.id} infoPersonaje={personaje}/>
-                })
-                }
+         
+            {   
+                listaPersonajes.length !== 0 ?
+                    listaPersonajes.map((personaje)=>{
+                        return <Individuales key={personaje.id} infoPersonaje={personaje}/>
+                    })
+                :
+                    <div class="alert alert-success" role="alert">
+                        Sorry! There are no characters width all those properties.
+                    </div>
+            }
             </div>
-            
             
         </section>
     )
 };
-
