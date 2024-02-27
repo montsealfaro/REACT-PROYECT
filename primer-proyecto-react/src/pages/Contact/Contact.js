@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Navegacion from "../../components/Navegacion"
 
 export default function Contact(){
@@ -29,3 +30,14 @@ export default function Contact(){
         
     )
 }
+=======
+import Navegacion from "./components/Navegacion"
+export default function Contact(){
+    return(
+        <div>
+            <Navegacion/>
+            <h1>Hola</h1>
+        </div>
+    )
+}
+>>>>>>> a6f4877e35d67d1d1549eda0eac38a81fccb56e7

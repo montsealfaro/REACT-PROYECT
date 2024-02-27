@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .barra{
     height: 168px;
     background-color: #344d67;
@@ -16,4 +17,9 @@
 #text3{
     color: #6ECCAF;
     margin-right: 50px;
+=======
+.active{
+    color: #344d67;
+    background-color: #6eccaf;
+>>>>>>> a6f4877e35d67d1d1549eda0eac38a81fccb56e7
 }
