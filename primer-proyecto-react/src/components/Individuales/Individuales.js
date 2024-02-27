@@ -1,10 +1,29 @@
+import { useState } from 'react';
+import Descripcion from '../Descripcion';
 import "./individuales.css"
-export default function Individuales (){
+
+export default function Individuales({infoPersonaje}) {
+
+    let [hide,setHide]=useState(true);
+
+    const showMore=()=>{
+        setHide(false)
+    }
+
     return(
-        <div className="individuales">
-            <img></img>
-            <h3> name </h3>
-            <button>know more!</button>
+       <div className="individuales rounded p-2 d-flex flex-row gap-3">
+        <div>
+            <img src={infoPersonaje.image}/>
+            <h3 className='text-center'>{infoPersonaje.name}</h3>
+            <div className="d-flex flex-row-reverse"><button className="btn btn-primary" onClick={showMore}>Know More...</button></div>
+            
         </div>
+
+        {
+            hide === false? <Descripcion className=".cajaDescripcion" status={infoPersonaje.status} especie={infoPersonaje.species} genero={infoPersonaje.gender} origen={infoPersonaje.origin.name} setHide={setHide}/>:''
+        }
+
+       </div>
     )
+    
 }

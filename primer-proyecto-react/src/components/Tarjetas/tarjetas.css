@@ -1,4 +1,14 @@
-.fuente{
-    background-color: azure;
-    color: blueviolet;
+.tarjetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 15px;
+    margin-right: 140px;
+    margin-left: 120px
 }
+
+.filtros{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+

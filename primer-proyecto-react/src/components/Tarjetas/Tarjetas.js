@@ -1,27 +1,88 @@
-import Individuales from "../Individuales/Individuales";
-import "./tarjetas.css";
+import {useState,useEffect} from 'react';
+
+import Individuales from '../Individuales/Individuales';
+import Filtros from '../Filtros';
+
+import "./tarjetas.css"
+
 export default function Tarjetas(){
+    
 
-    let personajes=[];
+    let [listaPersonajes,setListaPersonajes]=useState([]);
+    let [personajesCompleto,setPersonajesCompleto]=useState([])
+    let [filtrosAplicados,setFiltrosAplicados]=useState([]);
+    
     const traerPersonajes=async()=>{
-        
-        let  info= await fetch("https://rickandmortyapi.com/api/character")
-        .then((resp)=>{return resp.json()})
-        .then((data)=>{ console.log(data.results);return data.results}) 
-        .catch((error)=>{console.log(error)})
-        console.log(info)
 
-    personajes=info;
-    console.log(personajes)
+        let info= await fetch("https://rickandmortyapi.com/api/character")
+               .then((resp)=>{return resp.json()})
+               .then((data)=>{ return data.results}) 
+               .catch((error)=>{console.log(error)})
+       
+           
+          console.log(info)
+        
+
+        setListaPersonajes(info)
+        setPersonajesCompleto(info)
     };
 
-    return (
-        <div>
-            <button onClick={traerPersonajes}>cargar personajes</button>
-            { personajes.map(()=>{
-                return <Individuales/>
-            })
+
+    
+
+    const filterCharacter=(target)=>{
+        if(target.checked === true){
+            setFiltrosAplicados([...filtrosAplicados,target.value])
+        }else{
+            setListaPersonajes(personajesCompleto)
+            let filtrosNuevos=filtrosAplicados.filter((filtro)=> filtro !== target.value);
+            setFiltrosAplicados(filtrosNuevos)
+        }
+    }
+
+   
+    useEffect(()=>{
+        setListaPersonajes(personajesCompleto)
+        console.log(filtrosAplicados)
+        
+        filtrosAplicados.forEach((data)=>   {
+            if(data === "Dead" || data ==="Alive"){
+                let dataFiltrada=listaPersonajes.filter((personaje)=>personaje.status === data); 
+                setListaPersonajes(dataFiltrada)
+            }else if(data === "Female" || data ==="Male"){
+                let dataFiltrada=listaPersonajes.filter((personaje)=>personaje.gender === data);
+                setListaPersonajes(dataFiltrada)
+            }else if(data === "Unknown"){
+                let dataFiltrada=listaPersonajes.filter((personaje)=>personaje.origin.name === "unknown");
+                setListaPersonajes(dataFiltrada)
             }
-        </div>
+        })
+        
+    },[filtrosAplicados])
+  
+
+    useEffect(()=>{
+        traerPersonajes()
+    },[]);
+    
+    return(
+        <section className='structure'>
+            
+            <div className="filtros"> 
+            <Filtros  filterCharacter={filterCharacter}/> 
+            </div>
+        
+            <div className="tarjetas">
+                {
+                listaPersonajes.map((personaje)=>{
+                    
+                    return <Individuales key={personaje.id} infoPersonaje={personaje}/>
+                })
+                }
+            </div>
+            
+            
+        </section>
     )
-}
+};
+

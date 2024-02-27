@@ -1,4 +1,19 @@
+.barra{
+    height: 168px;
+    background-color: #344d67;
+}
+
 .active{
     color: #344d67;
     background-color: #6eccaf;
+}
+
+#text1{
+    color: #6ECCAF;
+    margin-left: 100px;
+}
+
+#text3{
+    color: #6ECCAF;
+    margin-right: 50px;
 }

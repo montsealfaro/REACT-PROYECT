@@ -1,5 +1,15 @@
 .individuales{
-    display: grid;
-    width: 300px;
-    background-color: cadetblue;
+    background-color:  #223142;
+    width:320px;
+    display: flex;
+    position: relative;
 }
+
+.text-center{
+    color: #6ECCAF;
+}
+
+.cajaDescripción{
+    position: absolute;
+}
+

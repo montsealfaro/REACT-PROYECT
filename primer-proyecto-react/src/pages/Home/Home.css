@@ -6,7 +6,7 @@
     height: 600px;
     width: 600px;
     position: fixed;
-    top: 7%;
+    top: 6%;
     left: 26.5%;
 }
 
@@ -31,7 +31,30 @@
     background-color: #344d67;
     color: #6eccaf;
     margin-right: 10px;
-    margin-top: 30px;
+    margin-top: 25px;
     padding: 15px;
     width: 113px;
+}
+
+.t1{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    
+}
+.t2{
+    margin-bottom: 30px;
+    
+}
+
+.t4{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+    
+}
+
+.t6{
+    margin-top: 10px;
+    
 }
