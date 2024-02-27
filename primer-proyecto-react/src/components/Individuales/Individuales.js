@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState } from 'react';
 import Descripcion from '../Descripcion';
 import "./individuales.css"
@@ -27,15 +26,4 @@ export default function Individuales({infoPersonaje}) {
        </div>
     )
     
-=======
-import "./individuales.css"
-export default function Individuales (){
-    return(
-        <div className="individuales">
-            <img></img>
-            <h3> name </h3>
-            <button>know more!</button>
-        </div>
-    )
->>>>>>> a6f4877e35d67d1d1549eda0eac38a81fccb56e7
 }

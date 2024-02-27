@@ -1,5 +1,4 @@
 .individuales{
-<<<<<<< HEAD
     background-color:  #223142;
     width:320px;
     display: flex;
@@ -14,9 +13,3 @@
     position: absolute;
 }
 
-=======
-    display: grid;
-    width: 300px;
-    background-color: cadetblue;
-}
->>>>>>> a6f4877e35d67d1d1549eda0eac38a81fccb56e7

@@ -1,4 +1,5 @@
 import "./Home.css";
+import BotonInicio from "../../components/Boton Inicio";
 export default function Home(){
     return (
         <div className="container-home align-self-center">
@@ -13,8 +14,8 @@ export default function Home(){
             <h2 className="t6 text text-center">Lets go!</h2>
 
             <div className="container-buttons">
-            <a className="boton text-center" href="./Character"> characters </a>
-            <a className="boton text-center" href="./Contact"> contact </a>
+            <BotonInicio nombreBoton='Characters' pasaje="/characters"/>
+            <BotonInicio nombreBoton="Contact" pasaje="/contact"/>        
             </div>
 
             </div>
