@@ -1,5 +1,5 @@
-import Navegacion from "../../components/Navegacion"
-import Tarjetas from "../../components/Tarjetas/Tarjetas"
+import Navegacion from "../../components/Navegacion";
+import Tarjetas from "../../components/Tarjetas/Tarjetas";
 
 export default function Characters(){
     
@@ -11,3 +11,4 @@ export default function Characters(){
        
     )
 }
+
