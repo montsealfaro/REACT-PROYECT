@@ -1,0 +1,6 @@
+.datos{
+    justify-content: start;
+    display: grid;
+    row-gap: 20px;
+    margin: 20px;
+}

@@ -1,14 +1,16 @@
-.tarjetas{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 30px;
-    margin-right: 140px;
-    margin-left: 140px
-}
 
 .filtros{
     margin-left: 15px;
     margin-top: 55px;
 }
 
+.box{
+    position: relative;
+    width: 1000px !important;
+    left: 10%;
+}
 
+.tarjetas{
+    column-gap: 20px;
+    row-gap: 20px;
+}

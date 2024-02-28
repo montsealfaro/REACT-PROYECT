@@ -74,20 +74,24 @@ export default function Tarjetas(){
 
 
             <Filtros filterCharacter={filterCharacter}/>
-            <div className="tarjetas">
-         
-            {   
-                listaPersonajes.length !== 0 ?
+             
+             <div className="box"> 
+
+                    <div className="d-flex flex-wrap tarjetas">
+                    { 
+                    listaPersonajes.length !== 0 ?
                     listaPersonajes.map((personaje)=>{
-                        return <Individuales key={personaje.id} infoPersonaje={personaje}/>
+                    return <Individuales key={personaje.id} infoPersonaje={personaje}/>
                     })
-                :
+                    :
                     <div class="alert alert-success" role="alert">
-                        Sorry! There are no characters width all those properties.
+                     Sorry! There are no characters width all those properties.
                     </div>
-            }
-            </div>
+             
+                 }
+             </div>
             
+             </div>
         </section>
     )
 };

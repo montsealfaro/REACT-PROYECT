@@ -18,3 +18,8 @@
     color: #344D67 !important;
     padding: 5px;
 }
+
+.targ{
+    position: relative;
+    width: 300px
+}

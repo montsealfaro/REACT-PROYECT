@@ -1,5 +1,5 @@
 .barra{
-    position: absolute;
+    position: fixed;
     height: 168px;
     background-color: #344d67; 
 }
