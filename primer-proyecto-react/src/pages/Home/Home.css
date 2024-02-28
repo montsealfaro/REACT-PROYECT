@@ -5,8 +5,9 @@
     background-color: #ffffffe6;
     height: 600px;
     width: 600px;
-    position: fixed;
-    top: 6%;
+    position: relative;
+    margin-top: 50px;
+    top: 10%;
     left: 26.5%;
 }
 
@@ -15,16 +16,13 @@
 }
 
 .container-text{
-    display: grid;
-    align-self: center;
-    margin-bottom: 10%;
-
+    margin-top: 50px;
 }
 
 .text-center{
     font-weight: 500;
     --bs-text-opacity: 1;
-  color: #344d67 !important;
+    color: #344d67 !important;
 }
 
 
