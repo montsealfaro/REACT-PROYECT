@@ -13,7 +13,7 @@ export default function Home(){
             <p className="t5 text-center"> Also you can filter for diferent types of properties to find the character that you are looking for or send us a massage for any concern o sugestion. </p>
             <h2 className="t6 text text-center">Lets go!</h2>
 
-            <div className="container-buttons">
+            <div className="container-buttons text-center">
             <BotonInicio nombreBoton='Characters' pasaje="/characters"/>
             <BotonInicio nombreBoton="Contact" pasaje="/contact"/>        
             </div>

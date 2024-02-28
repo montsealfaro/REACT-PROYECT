@@ -1,6 +1,6 @@
 .barra{
     height: 168px;
-    background-color: #344d67;
+    background-color: #344d67; 
 }
 
 .active{
@@ -8,12 +8,19 @@
     background-color: #6eccaf;
 }
 
-#text1{
-    color: #6ECCAF;
+h1{
+    color: #6ECCAF !important;
     margin-left: 100px;
 }
 
-#text3{
+#current{
     color: #6ECCAF;
     margin-right: 50px;
+}
+
+.text-decoration-none{
+    font-weight: 500;
+    background-color: #344d67;
+    color: #6eccaf;
+    padding: 15px;
 }

@@ -14,7 +14,7 @@ export default function Navegacion({hoja}){
                 </button>
                 <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul className="navbar-nav">
-                        <li className={hoja === "Characters" ? "nav-link active":"nav-link"} aria-current="page" >
+                        <li className={hoja === "Characters" ? "nav-link active":"nav-link"} aria-current="page" id='Current' >
                            <Link to="/characters" className='text-decoration-none'> Characters</Link>
                         </li>
                         <li className={hoja === "Contact" ? "nav-link active":"nav-link"} >

@@ -21,6 +21,13 @@
 
 }
 
+.text-center{
+    font-weight: 500;
+    --bs-text-opacity: 1;
+  color: #344d67 !important;
+}
+
+
 .container-buttons{
     display: flex;
     column-gap: 10px;
@@ -58,3 +65,4 @@
     margin-top: 10px;
     
 }
+
