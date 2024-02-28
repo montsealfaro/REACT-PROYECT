@@ -1,14 +1,20 @@
 .individuales{
-    background-color:  #223142;
+    background-color:#223142;
     width:fit-content;
     display: flex;
-    position: relative;
 }
 
 .text-center{
-    color: #6ECCAF;
+    margin: 20px;
+    color: #6ECCAF !important;
 }
 
 .cajaDescripción{
     position: absolute;
+}
+
+.btn{
+    background-color: #6ECCAF !important;
+    color: #344D67 !important;
+    padding: 5px;
 }

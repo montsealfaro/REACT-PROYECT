@@ -1,7 +1,7 @@
 .tarjetas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 30pxpx;
+    row-gap: 30px;
     margin-right: 140px;
     margin-left: 140px
 }

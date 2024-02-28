@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Descripcion from '../Descripcion';
-import "./individuales.css"
+import "./individuales.css";
 
 export default function Individuales({infoPersonaje}) {
 
@@ -15,7 +15,7 @@ export default function Individuales({infoPersonaje}) {
         <div>
             <img src={infoPersonaje.image}/>
             <h3 className='text-center'>{infoPersonaje.name}</h3>
-            <div className="d-flex flex-row-reverse"><button className="btn btn-primary" onClick={showMore}>Know More...</button></div>
+            <div className="d-flex flex-row-reverse"><button className="btn fw-medium rounded" onClick={showMore}>Know More...</button></div>
             
         </div>
 
