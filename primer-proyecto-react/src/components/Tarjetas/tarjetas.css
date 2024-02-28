@@ -1,14 +1,14 @@
 .tarjetas{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 15px;
+    row-gap: 30pxpx;
     margin-right: 140px;
-    margin-left: 120px
+    margin-left: 140px
 }
 
 .filtros{
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 15px;
+    margin-top: 55px;
 }
 
 

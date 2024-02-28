@@ -5,7 +5,7 @@ export default function Characters(){
     
     return(
         <div>
-            <Navegacion hoja="Characters"/>
+            <Navegacion className="position-absolute" hoja="Characters"/>
             <Tarjetas/>
         </div>
        

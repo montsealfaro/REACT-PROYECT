@@ -1,15 +1,17 @@
 
 .containerFil{
-    margin-top: 20px;
+    margin-right: 10px;
+    margin-top: 25px;
+    margin-bottom: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    column-gap: 50px;
+    column-gap: 90px;
 }
 
-h2{
-    margin-left: 10px;
-    color: #344D67;
+.titulo{
+    margin: 10px;
+    color: #344d67;
 }
 
 

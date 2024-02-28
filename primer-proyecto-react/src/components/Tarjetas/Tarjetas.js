@@ -70,7 +70,7 @@ export default function Tarjetas(){
     },[]);
     
     return(
-        <section className="">
+        <section className="filtros">
 
 
             <Filtros filterCharacter={filterCharacter}/>

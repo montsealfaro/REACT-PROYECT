@@ -1,11 +1,7 @@
 .barra{
+    position: absolute;
     height: 168px;
     background-color: #344d67; 
-}
-
-.active{
-    color: #344d67;
-    background-color: #6eccaf;
 }
 
 h1{
@@ -13,14 +9,15 @@ h1{
     margin-left: 100px;
 }
 
-#current{
-    color: #6ECCAF;
-    margin-right: 50px;
+
+.nav-link-active{
+    background-color: #6ECCAF !important;
+    font-weight: 500 #344d67 !important;
+    margin: 30px;
 }
 
-.text-decoration-none{
-    font-weight: 500;
-    background-color: #344d67;
-    color: #6eccaf;
-    padding: 15px;
+.nav-link{
+    font-weight: 500 #6ECCAF !important;
+    margin: 30px;
 }
+
