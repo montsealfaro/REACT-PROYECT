@@ -9,10 +9,9 @@ h1{
     margin-left: 100px;
 }
 
-
 .nav-link-active{
+    font-weight: 600 !important;
     background-color: #6ECCAF !important;
-    font-weight: 500 #344d67 !important;
     margin: 30px;
 }
 
@@ -20,4 +19,5 @@ h1{
     font-weight: 500 #6ECCAF !important;
     margin: 30px;
 }
+
 

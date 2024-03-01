@@ -14,7 +14,7 @@ export default function Individuales({infoPersonaje}) {
        <div className="individuales rounded p-2 d-flex flex-row gap-3">
         <div className='targ'>
             <img src={infoPersonaje.image}/>
-            <h3 className='text-center'>{infoPersonaje.name}</h3>
+            <h3 className='name text-center'>{infoPersonaje.name}</h3>
             <div className="d-flex flex-row-reverse"><button className="btn fw-medium rounded" onClick={showMore}>Know More...</button></div>
             
         </div>

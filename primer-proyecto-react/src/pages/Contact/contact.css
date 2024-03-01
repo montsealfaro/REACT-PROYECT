@@ -1,0 +1,50 @@
+.container{
+    height: fit-content;
+    width: fit-content;
+    background-color: #5d7793e1 ;
+    position: relative;
+    left: 20px;
+}
+
+.contenedor-info{
+    width: 750px;
+    color: #223142 !important;
+    font-weight: 500;
+}
+
+.titulo{
+    color: #223142 !important;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.sub-text{
+    color: #223142 !important;
+    margin-bottom: 30px;
+}
+
+#name{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+#email{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#message{
+    height: 250px;
+}
+
+#send{
+    background-color: #223142 !important;
+    color: white !important;
+    font-weight: 500;
+}
+
+.labels-contacts{
+    font-weight: 800;
+    margin-bottom: 5px;
+}

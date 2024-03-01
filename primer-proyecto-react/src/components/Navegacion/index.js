@@ -17,7 +17,7 @@ export default function Navegacion({hoja}){
                         <li className={hoja === "Characters" ? "nav-link-active btn btn-rounded":"nav-link" } aria-current="page" >
                            <Link to="/characters" className='text-decoration-none'> Characters</Link>
                         </li>
-                        <li className={hoja === "Contact" ? "nav-link-active btn btn-rounded ":"nav-link"} >
+                        <li className={hoja === "Contact" ? "nav-link-active btn btn-rounded texto-boton":"nav-link"} >
                             <Link to="/contact" className='text-decoration-none'>Contact</Link>
                         </li>
                     

@@ -6,7 +6,7 @@ export default function Home(){
 
             <div className="container-text">
 
-            <h1 className="t1 text-center"> Proyect Rick & Morty</h1>
+            <h1 className="t1"> Proyect Rick & Morty</h1>
             <h2 className="t2 text-center">Welcome to Rick & Morty Proyect!</h2>
             <p className="t3 text-center">This proyect was made for practising React and to made a functional website.</p>
             <p className="t4 text-center">In this website you can know information of the characters of this animated series.</p>
