@@ -1,5 +1,5 @@
 .container-home{
-    display: flex;
+    display: inline-block;
     justify-content: center;
     justify-self: center;
     background-color: #ffffffe6;
@@ -7,6 +7,8 @@
     width: 600px;
     position: relative;
     margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
     top: 10%;
     left: 26.5%;
 }
@@ -65,3 +67,124 @@
     
 }
 
+@media(max-width:800px){
+
+
+    .container-home{
+        display: inline-block;
+        justify-content: center;
+        justify-self: center;
+        background-color: #ffffffe6;
+        height: 600px;
+        width: 600px;
+        position: relative;
+        margin-top: 50px;
+        margin-left: -20px;
+        top: 10%;
+        left: 10%;
+
+    }
+
+    .container-text{
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    .container-buttons{
+        display: grid;
+        justify-content: center;
+        
+    }
+
+    .t1{
+        font-size: 40px;
+        text-align: center;
+        position: relative;
+        right: 6%;
+        color: #344d67 !important;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        
+    }
+
+    .t2{
+        color: #6eccaf !important;
+        margin-bottom: 30px;
+        
+    }
+
+    .t3{
+        margin-left: 10px;
+    }
+
+    .t6{
+        color: #6eccaf !important;
+        margin-top: 30px;
+        
+    }
+
+
+
+
+
+
+
+}
+
+@media(max-width:600px){
+
+
+    .container-home{
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+        background-color: #ffffffe6;
+        height: 600px;
+        width: 520px;
+        position: relative;
+        margin-top: 50px;
+        margin-left: -30px;
+        top: 10%;
+
+    }
+
+    .container-text{
+        position: absolute;
+        margin-top: 15px;
+    }
+
+    .container-buttons{
+        display: grid;
+        justify-content: center;
+        
+    }
+
+    .t1{
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+        right: 10%;
+        color: #344d67 !important;
+        margin-bottom: 30px;
+        
+    }
+
+    .t2{
+        color: #6eccaf !important;
+        margin-bottom: 30px;
+        
+    }
+
+    .t6{
+        color: #6eccaf !important;
+        margin-top: 30px;
+        
+    }
+
+
+
+
+
+
+
+}
